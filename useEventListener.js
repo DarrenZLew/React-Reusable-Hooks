@@ -1,3 +1,5 @@
+// handles checking if addEventListener is supported, adding the event listener, and removal on cleanup
+
 function useEventListener(eventName, handler, element = window){
   // Create a ref that stores handler
   const savedHandler = useRef();
